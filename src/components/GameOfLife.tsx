@@ -18,7 +18,7 @@ const GameOfLife: React.FC = () => {
     <div>
       <div className="absolute inset-0 -z-10 h-screen w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
 
-      <div className="flex flex-col items-center justify-center h-screen p-30 ">
+      <div className="flex flex-col items-center justify-center h-screen p-5 md:p-30 ">
         {/* <div className="mb-5 mt-10 text-white font-semibold text-md sm:text-2xl">
           {"Conway's Game of Life"}
         </div> */}
