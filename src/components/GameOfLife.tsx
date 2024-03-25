@@ -22,7 +22,7 @@ const GameOfLife: React.FC = () => {
         {/* <div className="mb-5 mt-10 text-white font-semibold text-md sm:text-2xl">
           {"Conway's Game of Life"}
         </div> */}
-        <h2 className="mt-5 mb-4 text-center text-xl sm:text-3xl font-medium dark:text-gray-50">
+        <h2 className="mt-5 mb-8 text-center text-xl sm:text-3xl font-medium dark:text-gray-50">
           Conways{" "}
           <span className="animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
             Game of Life

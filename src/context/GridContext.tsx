@@ -153,9 +153,9 @@ export const useGrid = () => {
 };
 
 const calculateDimensions = () => {
-  const maxWidth = window.innerWidth * 0.9;
+  const maxWidth = window.innerWidth * 0.8;
   const cellSize = 20;
   const cols = Math.floor(maxWidth / cellSize);
-  const rows = Math.floor((window.innerHeight * 0.8) / cellSize);
+  const rows = Math.floor((window.innerHeight * 0.7) / cellSize);
   return { rows, cols };
 };

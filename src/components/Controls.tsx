@@ -27,7 +27,7 @@ const Controls = () => {
   };
 
   return (
-    <div className="flex flex-row gap-4 items-center justify-center">
+    <div className="flex flex-row gap-4 items-center justify-center mb-6">
       <button
         className={`${baseButtonClass} ${
           isRunning
