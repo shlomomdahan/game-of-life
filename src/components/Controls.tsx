@@ -16,7 +16,7 @@ const Controls = () => {
   };
 
   const baseButtonClass =
-    "shadow-lg rounded-xl mb-3 sm:mb-5 font-bold p-1 sm:p-2 sm:px-4 rounded transform transition duration-150 ease-in-out text-xs sm:text-base text-white";
+    "shadow-lg rounded-xl mb-3 sm:mb-5 font-bold p-2 sm:p-2 sm:px-4 rounded transform transition duration-150 ease-in-out text-sm sm:text-base text-white";
 
   const toggleStartStop = () => {
     if (isRunning) {
