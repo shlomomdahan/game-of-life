@@ -21,7 +21,6 @@ const positions = [
 ];
 
 export const updateGrid = (grid: number[][]) => {
-  // Create a new grid to avoid mutating the original
   const newGrid = grid.map((row, i) =>
     row.map((cell, k) => {
       let neighbors = 0;
@@ -33,7 +32,6 @@ export const updateGrid = (grid: number[][]) => {
         }
       });
 
-      // Applying rules of the Game of Life
       if (cell === 1 && (neighbors < 2 || neighbors > 3)) {
         return 0; // Cell dies
       } else if (cell === 0 && neighbors === 3) {

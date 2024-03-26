@@ -88,27 +88,26 @@ export const GridProvider: React.FC<GridProviderProps> = ({ children }) => {
     if (!isRunningRef.current) {
       console.log("start");
       setIsRunning(true);
-      isRunningRef.current = true; // Update the ref synchronously
+      isRunningRef.current = true;
       runAnimation();
     }
   };
 
   const handleStop = () => {
     setIsRunning(false);
-    isRunningRef.current = false; // Update the ref synchronously
+    isRunningRef.current = false;
   };
 
   const runAnimation = () => {
     let lastFrameTime = Date.now();
 
     const animate = () => {
-      if (!isRunningRef.current) return; // Use the ref to check the running state
+      if (!isRunningRef.current) return;
 
       const currentTime = Date.now();
       const delta = currentTime - lastFrameTime;
 
       if (delta >= intervalSpeedRef.current) {
-        // Use the ref to get the current speed
         setGrid((g) => updateGrid(g));
         lastFrameTime = currentTime - (delta % intervalSpeedRef.current);
       }
@@ -120,7 +119,7 @@ export const GridProvider: React.FC<GridProviderProps> = ({ children }) => {
   };
 
   useEffect(() => {
-    isRunningRef.current = isRunning; // Update the ref whenever isRunning changes
+    isRunningRef.current = isRunning;
   }, [isRunning]);
 
   useEffect(() => {
