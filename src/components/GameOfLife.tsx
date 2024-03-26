@@ -43,7 +43,7 @@ const GameOfLife: React.FC = () => {
         <Controls />
 
         <div
-          className="grid gap-px shadow-lg mb-10"
+          className="grid gap-px shadow-lg sm:mb-10"
           style={{
             gridTemplateColumns: `repeat(${cols}, 20px)`,
           }}
