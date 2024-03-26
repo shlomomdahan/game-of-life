@@ -42,7 +42,7 @@ const Controls = () => {
       >
         Clear
       </button>
-      <div className="flex flex-col gap-2 items-center justify-center mb-8 ml-5">
+      <div className="flex flex-col gap-2 items-center justify-center mb-3 sm:mb-8 ml-5">
         <span className="text-white font-semibold">Speed</span>
         <input
           type="range"

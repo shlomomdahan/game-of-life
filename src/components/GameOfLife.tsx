@@ -20,7 +20,7 @@ const GameOfLife: React.FC = () => {
       <div className="absolute inset-0 -z-10 h-screen w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
 
       <div className="flex flex-col items-center justify-center h-screen p-5 md:p-30 ">
-        <h2 className=" flex gap-3 mt-5 mb-8 text-center text-xl sm:text-3xl font-medium text-purple-300">
+        <h2 className=" flex gap-3 mt-1 sm:mt-5 mb-3 sm:mb-8 text-center text-xl sm:text-3xl font-medium text-purple-300">
           {"Conway's"}
           <span className="inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
             Game of Life
