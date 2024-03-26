@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import { useGrid } from "@/context/GridContext";
 import Controls from "@/components/Controls";
+import { FaGithub } from "react-icons/fa";
 
 const GameOfLife: React.FC = () => {
   const { grid, cols, handleMouseDown, handleMouseEnter, handleMouseUp } =
@@ -19,14 +20,24 @@ const GameOfLife: React.FC = () => {
       <div className="absolute inset-0 -z-10 h-screen w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
 
       <div className="flex flex-col items-center justify-center h-screen p-5 md:p-30 ">
-        {/* <div className="mb-5 mt-10 text-white font-semibold text-md sm:text-2xl">
-          {"Conway's Game of Life"}
-        </div> */}
-        <h2 className="mt-5 mb-8 text-center text-xl sm:text-3xl font-medium dark:text-gray-50">
-          Conways{" "}
-          <span className="animate-text-gradient inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
+        <h2 className=" flex gap-3 mt-5 mb-8 text-center text-xl sm:text-3xl font-medium dark:text-gray-50">
+          {"Conway's"}
+          <span className="inline-flex bg-gradient-to-r from-neutral-900 via-slate-500 to-neutral-500 bg-[200%_auto] bg-clip-text leading-tight text-transparent dark:from-neutral-100 dark:via-slate-400 dark:to-neutral-400">
             Game of Life
           </span>
+          <a
+            href="https://github.com/shlomomdahan/game-of-life"
+            className="flex items-center justify-center"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub
+              className="h-10 w-10"
+              style={{
+                color: "rgba(255,255,255,0.85)",
+              }}
+            />
+          </a>
         </h2>
 
         <Controls />

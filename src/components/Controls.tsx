@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { useGrid } from "@/context/GridContext";
 
@@ -16,7 +14,7 @@ const Controls = () => {
   };
 
   const baseButtonClass =
-    "shadow-lg rounded-xl mb-3 sm:mb-5 font-bold p-2 sm:p-2 sm:px-4 rounded transform transition duration-150 ease-in-out text-sm sm:text-base text-white";
+    "inline-flex items-center justify-center shadow-md rounded-full mb-3 sm:mb-5 font-bold p-2 sm:p-3 sm:px-5 px-4 cursor-pointer transform transition-all duration-150 ease-in-out text-sm sm:text-base text-white hover:scale-105";
 
   const toggleStartStop = () => {
     if (isRunning) {
@@ -31,21 +29,21 @@ const Controls = () => {
       <button
         className={`${baseButtonClass} ${
           isRunning
-            ? "bg-red-500 hover:bg-red-700"
-            : "bg-green-500 hover:bg-green-700"
+            ? "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700"
+            : "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700"
         }`}
         onClick={toggleStartStop}
       >
         {isRunning ? "Stop" : "Start"}
       </button>
       <button
-        className={`${baseButtonClass} bg-blue-500 hover:bg-blue-700`}
+        className={`${baseButtonClass} bg-gradient-to-r from-purple-500 to-slate-500 hover:from-purple-600 hover:to-slate-600`}
         onClick={handleClear}
       >
         Clear
       </button>
-      <div className="flex flex-col gap-1 items-center justify-center mb-4">
-        <span className="inline-flex items-center pl-2 text-white">Speed</span>
+      <div className="flex flex-col gap-2 items-center justify-center mb-8 ml-5">
+        <span className="text-white font-semibold">Speed</span>
         <input
           type="range"
           min="2"
@@ -53,7 +51,7 @@ const Controls = () => {
           defaultValue="350"
           step="2"
           onChange={onSpeedChange}
-          className="mb-4 h-2 rounded-lg appearance-none cursor-pointer bg-gray-700"
+          className="w-full h-2 bg-gradient-to-r from-gray-600 to-gray-500 rounded-lg appearance-none cursor-pointer transition-colors duration-200 ease-in-out"
         />
       </div>
     </div>
