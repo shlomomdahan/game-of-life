@@ -32,7 +32,7 @@ const GameOfLife: React.FC = () => {
             rel="noopener noreferrer"
           >
             <FaGithub
-              className="h-10 w-10"
+              className="h-8 w-8 sm:h-10 sm:w-10"
               style={{
                 color: "rgba(255,255,255,0.85)",
               }}
